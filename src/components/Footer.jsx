@@ -5,7 +5,7 @@ import { FaTwitter } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className='bg-[#4B2E2B] text-white py-6 mt-10'>
+    <footer className='bg-[#4B2E2B] text-white py-6'>
         <div className='max-w-6xl mx-auto px-6 text-center'>
             <div className='flex justify-center gap-6 mb-4 text-[20px]'>
                 <a href="" className='hover:text-yellow-300 transition-all duration-300'><FaInstagram /></a>

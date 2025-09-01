@@ -95,47 +95,71 @@ function Home() {
                 </div>
         </section>
 
-        <section className='py-16 bg-gray-50' id='contact'>
-            <div>
-                <div>
-                    <h1 className='text-center text-[30px] font-[500]'>Contact Us</h1>
-                    <p className='text-center italic text-gray-700'>Find Us Here!</p>
+        <section className="py-16 bg-gray-50" id="contact">
+            <div className="max-w-6xl mx-auto px-4 sm:px-6">
+                <div className="mb-10">
+                    <h1 className="text-center text-[26px] sm:text-[30px] font-[500]">Contact Us</h1>
+                    <p className="text-center italic text-gray-700 mt-2">Find Us Here!</p>
                 </div>
 
-                <div className='grid md:grid-cols-2 max-w-6xl mx-auto px-6 gap-10 items-center mt-6 '>
-                    <div className='flex flex-col gap-4 text-gray-700 border-2 border-gray-200 rounded-2xl p-6 shadow-lg'>
-                        <div className='flex flex-col'>
-                            <label htmlFor="">Name</label>
-                            <input type="text" placeholder='Type your Name' required className='border-1 border-gray-400 rounded-[10px] py-[10px] px-[15px] outline-none'/>
-                        </div>
-                        
-                        <div className='flex flex-col'>
-                            <label htmlFor="">Email</label>
-                            <input type="email" placeholder='Type your email' required className='border-1 border-gray-400 rounded-[10px] py-[10px] px-[15px] outline-none'/>
-                        </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+                    <form className="flex flex-col gap-4 text-gray-700 border border-gray-200 rounded-2xl p-5 sm:p-6 shadow-lg bg-white">
 
-                        <div className='flex flex-col'>
-                            <label htmlFor="">Message</label>
-                            <input type="text" placeholder='Your message' required className='border-1 border-gray-400 rounded-[10px] py-[10px] px-[15px] outline-none'/>
+                        <div className="flex flex-col gap-2">
+                            <label htmlFor="name" className="font-medium">Name</label>
+                            <input
+                                type="text"
+                                id="name"
+                                placeholder="Type your Name"
+                                required
+                                className="border border-gray-300 rounded-lg py-2.5 px-4 outline-none focus:border-gray-400 transition-all duration-300"
+                            />
                         </div>
 
-                        <button type='submit' className='bg-[#4B2E2B] text-white px-[20px] py-[10px] rounded-2xl cursor-pointer hover:bg-[#2a1a19] transition-all duration-300'>Submit</button>
-                    </div>
+                        <div className="flex flex-col gap-2">
+                            <label htmlFor="email" className="font-medium">Email</label>
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="Type your email"
+                                required
+                                className="border border-gray-300 rounded-lg py-2.5 px-4 outline-none focus:border-gray-400 transition-all duration-300"
+                            />
+                        </div>
 
-                    <div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126763.40396249277!2d106.68943188949607!3d-6.229386699999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1d0e9a7f4f7%3A0x2c2a2291a07698d2!2sCoffee%20Shop!5e0!3m2!1sen!2sid!4v1693409136843!5m2!1sen!2sid" 
-                        width="100%" 
-                        height="350" 
-                        className="border-none rounded-2xl shadow-lg" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
+                        <div className="flex flex-col gap-2">
+                            <label htmlFor="message" className="font-medium">Message</label>
+                            <textarea
+                                id="message"
+                                placeholder="Your message"
+                                required
+                                rows="4"
+                                className="border border-gray-300 rounded-lg py-2.5 px-4 outline-none focus:border-gray-400 transition-all duration-300 resize-none"
+                            ></textarea>
+                        </div>
 
-                        </iframe>
+                        <button
+                            type="submit"
+                            className="bg-[#4B2E2B] text-white px-6 py-3 rounded-lg cursor-pointer hover:bg-[#2a1a19] transition-all duration-300 mt-2 w-full md:w-auto"
+                        >
+                            Submit
+                        </button>
+                    </form>
+
+                    <div className="w-full">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126763.40396249277!2d106.68943188949607!3d-6.229386699999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1d0e9a7f4f7%3A0x2c2a2291a07698d2!2sCoffee%20Shop!5e0!3m2!1sen!2sid!4v1693409136843!5m2!1sen!2sid"
+                            className="w-full aspect-[4/3] rounded-2xl shadow-lg"
+                            allowFullScreen
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
+                        />
                     </div>
                 </div>
             </div>
         </section>
+
+
     </div>
     
   )
